@@ -1,0 +1,50 @@
+batch,steps,variant,ms,speedup,launches
+1,1,pytorch,0.9177,1.0,70
+1,1,torch.compile,0.5194,1.77,35
+1,1,pytorch + cuda graph,0.1992,4.61,1
+1,1,"triton, 1 kernel per step",0.431,2.13,19
+1,1,"triton, 1 kernel total",0.4235,2.17,19
+1,1,triton tf32,0.4075,2.25,19
+1,1,triton + cuda graph,0.2092,4.39,1
+1,2,pytorch,1.785,1.0,122
+1,2,torch.compile,0.9314,1.92,59
+1,2,pytorch + cuda graph,0.3027,5.9,1
+1,2,"triton, 1 kernel per step",0.5006,3.57,20
+1,2,"triton, 1 kernel total",0.46,3.88,19
+1,2,triton tf32,0.433,4.12,19
+1,2,triton + cuda graph,0.2814,6.34,1
+1,4,pytorch,3.4994,1.0,226
+1,4,torch.compile,1.5495,2.26,107
+1,4,pytorch + cuda graph,0.4967,7.04,1
+1,4,"triton, 1 kernel per step",0.7776,4.5,22
+1,4,"triton, 1 kernel total",0.5965,5.87,19
+1,4,triton tf32,0.7716,4.54,19
+1,4,triton + cuda graph,0.4402,7.95,1
+1,8,pytorch,6.8325,1.0,434
+1,8,torch.compile,3.1239,2.19,203
+1,8,pytorch + cuda graph,0.8215,8.32,1
+1,8,"triton, 1 kernel per step",1.2125,5.63,26
+1,8,"triton, 1 kernel total",1.1621,5.88,19
+1,8,triton tf32,1.0121,6.75,19
+1,8,triton + cuda graph,0.7401,9.23,1
+16,4,pytorch,3.356,1.0,176
+16,4,torch.compile,1.2899,2.6,81
+16,4,pytorch + cuda graph,0.4626,7.26,1
+16,4,"triton, 1 kernel per step",0.5961,5.63,20
+16,4,"triton, 1 kernel total",0.5935,5.65,17
+16,4,triton tf32,0.755,4.45,17
+16,4,triton + cuda graph,0.4333,7.75,1
+64,4,pytorch,3.4249,1.0,202
+64,4,torch.compile,1.4562,2.35,107
+64,4,pytorch + cuda graph,0.599,5.72,1
+64,4,"triton, 1 kernel per step",0.6325,5.42,22
+64,4,"triton, 1 kernel total",0.625,5.48,19
+64,4,triton tf32,0.5469,6.26,19
+64,4,triton + cuda graph,0.4587,7.47,1
+256,4,pytorch,3.3696,1.0,177
+256,4,torch.compile,1.515,2.22,82
+256,4,pytorch + cuda graph,1.0047,3.35,1
+256,4,"triton, 1 kernel per step",0.6875,4.9,21
+256,4,"triton, 1 kernel total",0.6628,5.08,18
+256,4,triton tf32,0.6161,5.47,18
+256,4,triton + cuda graph,0.522,6.46,1

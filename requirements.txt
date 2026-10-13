@@ -1,0 +1,7 @@
+torch
+triton; platform_system != "Windows"
+triton-windows; platform_system == "Windows"
+numpy
+matplotlib
+h5py
+torchvision
