@@ -85,8 +85,6 @@ python bench.py   # latency: PyTorch, torch.compile, CUDA graphs, Triton
 python plot.py    # results/latency.png
 ```
 
-No GPU? `TRITON_INTERPRET=1 python test.py` runs the kernel on the CPU (slow, but checks correctness).
-
 ## Files
 
 - `model.py` the RosVLA velocity-head model, same as in the paper
